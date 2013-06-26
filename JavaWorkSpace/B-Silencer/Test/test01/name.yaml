@@ -1,0 +1,10 @@
+URL:www.baidu.com
+
+
+百度输入框:
+	des:百度输入框
+	id:kw
+	
+百度提交按钮:
+	des:百度提交按钮
+	class:s_btn

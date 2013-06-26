@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+  <parameter name="Browser" value="firefox"/>
+  <parameter name="Url" value="http://www.baidu.com"/>
+  <parameter name="keyword" value="selenium"/>
+  <test name="Test" presetve-order="true">
+    <classes>
+      <class name="testNG.MyTest"/>
+      	<methods>
+      		<include name="setBrowser"/>
+      		<include name="search"/>
+      	</methods>      
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+
+<!-- 在testng.xml的配置中，test节点需要增加一个属性的配置： preserve-order=”true”。
+这个preserve-order默认是false，在节点下面的所有方法的执行顺序是无序的。
+把它设为true以后就能保证在节点下的方法是按照顺序执行的。
+在上面代码中setupBrowser方法必须在search方法前执行！ -->

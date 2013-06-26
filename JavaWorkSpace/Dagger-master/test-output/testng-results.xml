@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="56835" started-at="2013-03-15T08:21:00Z" finished-at="2013-03-15T08:21:57Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="56835" started-at="2013-03-15T08:21:00Z" finished-at="2013-03-15T08:21:57Z">
+      <class name="com.netease.demo.TestNg">
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.netease.demo.TestNg@17e6a96]" name="doBeforeClass" is-config="true" duration-ms="41107" started-at="2013-03-15T16:21:00Z" finished-at="2013-03-15T16:21:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="doTest(java.lang.String, java.lang.String)[pri:0, instance:com.netease.demo.TestNg@17e6a96]" name="doTest" duration-ms="6998" started-at="2013-03-15T16:21:41Z" data-provider="data" finished-at="2013-03-15T16:21:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[java]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[www.java.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doTest -->
+        <test-method status="PASS" signature="doTest(java.lang.String, java.lang.String)[pri:0, instance:com.netease.demo.TestNg@17e6a96]" name="doTest" duration-ms="4607" started-at="2013-03-15T16:21:48Z" data-provider="data" finished-at="2013-03-15T16:21:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[github]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://github.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doTest -->
+        <test-method status="PASS" signature="doAfterClass()[pri:0, instance:com.netease.demo.TestNg@17e6a96]" name="doAfterClass" is-config="true" duration-ms="4066" started-at="2013-03-15T16:21:53Z" finished-at="2013-03-15T16:21:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterClass -->
+      </class> <!-- com.netease.demo.TestNg -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

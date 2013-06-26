@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="17315" started-at="2013-03-25T10:05:43Z" finished-at="2013-03-25T10:06:01Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="17315" started-at="2013-03-25T10:05:43Z" finished-at="2013-03-25T10:06:01Z">
+      <class name="testNG.MyTest">
+        <test-method status="PASS" signature="setBrowser(java.lang.String)[pri:0, instance:testNG.MyTest@f73c1]" name="setBrowser" is-config="true" duration-ms="11762" started-at="2013-03-25T18:05:43Z" finished-at="2013-03-25T18:05:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setBrowser -->
+        <test-method status="PASS" signature="search(java.lang.String, java.lang.String)[pri:0, instance:testNG.MyTest@f73c1]" name="search" duration-ms="5537" started-at="2013-03-25T18:05:55Z" finished-at="2013-03-25T18:06:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://www.baidu.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[selenium]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search -->
+      </class> <!-- testNG.MyTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

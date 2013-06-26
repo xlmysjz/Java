@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <parameter name="Browser" value="firefox"/>
+  <parameter name="Url" value="http://www.baidu.com"/>
+  <parameter name="keyword" value="selenium"/>
+  <test name="Test(failed)">
+    <classes>
+      <class name="testNG.MyTest">
+        <methods>
+          <include name="setBrowser"/>
+          <include name="search" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testNG.MyTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

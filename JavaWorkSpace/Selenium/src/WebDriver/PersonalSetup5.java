@@ -1,0 +1,113 @@
+package WebDriver;
+
+import java.util.concurrent.TimeUnit;
+
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+
+
+public class PersonalSetup5
+{
+	private static WebDriver ChromeDriver;
+	private static String Url = "http://topka.cn";
+	
+	public static void InitBrowser()
+	{
+		System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\eclipse\\chromedriver.exe");//设置chrome浏览器驱动chromedriver，这个exe文件要单独下载
+		ChromeDriver = new ChromeDriver();//创建chrome浏览器实例
+		ChromeDriver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);//浏览器超时等待,等待指定的WebElement加载完毕
+		
+		ChromeDriver.get(Url);
+
+	}
+	public static WebElement WaitLoad(final WebElement element)//封装智能守候页面加载 
+	{
+		WebDriverWait wait = new WebDriverWait(ChromeDriver,20);
+		return wait.until(new ExpectedCondition<WebElement>()
+				{
+					//@verride
+					public WebElement apply(WebDriver d)
+					{
+						return element;
+					}
+				});
+	}
+	/*
+	// 同上，或者直接在方法里写：
+	 WebDriverWait wait = new WebDriverWait(dr,10);
+	        wait.until(new ExpectedCondition<WebElement>(){
+	        @Override
+	            public WebElement apply(WebDriver d) {
+	                return d.findElement(By.className("red_box"));
+	    }
+	        });
+	*/
+
+	public static void main(String[] args) throws Exception
+	{
+		InitBrowser();
+		Thread.sleep(3000);//可以注释掉
+		WaitLoad(ChromeDriver.findElement(By.linkText("登录"))).click();//智能等待页面元素加载完成
+		//ChromeDriver.findElement(By.linkText("邮箱登录>>")).click();
+		
+		WebElement ElementLogin = ChromeDriver.findElement(By.linkText("登录"));//查找右上角 登录 链接
+		ElementLogin.click();
+		
+		WebElement ElEmail = ChromeDriver.findElement(By.id("login_email"));//邮箱输入框查找
+		ElEmail.clear();//先清一下邮箱输入框里的内容
+		ElEmail.sendKeys("111111@sina.com");//向邮箱输入框输入 111111@sina.com
+		
+		
+		/*
+		WebElement eLogin = ChromeDriver.findElement(By.className("reg_pr90"));//得到密码输入框的 label
+		List<WebElement> el = eLogin.findElements(By.tagName("label"));
+		for(WebElement c:el)
+		{
+			System.out.println(c.getText());
+		}
+		*/
+		WebElement ElPWD = ChromeDriver.findElement(By.cssSelector("input[id=\"login_password\"]"));//查找密码输入框
+		ElPWD.clear();
+		ElPWD.sendKeys("123456");
+		
+		//点击登录按钮
+		WebElement ElSub = ChromeDriver.findElement(By.xpath("//input[@id='login']"));//查找登录按钮
+		ElSub.click();//登录
+		Thread.sleep(3000);//登陆平台后，停留3000毫秒
+		
+		/*
+		List<WebElement> element = ChromeDriver.findElements(By.tagName("input"));//打印input里的id名称
+		for(WebElement e:element)
+		{
+			System.out.println(e.getAttribute("id"));
+		}*/
+		Actions action = new Actions(ChromeDriver);
+		action.moveToElement(ChromeDriver.findElement(By.xpath("//div[@class='fr ml_15 pos_pare mod_userbox J_user_menu']"))).perform();//移动到右上角显示下拉菜单
+
+		ChromeDriver.findElement(By.linkText("个人设置")).click();//点击个人设置
+		
+		WaitLoad(ChromeDriver.findElement(By.linkText("基本信息")));//智能等待 个人设置-基本信息 的标签显示
+		
+		//以下是下拉菜单的选择
+		Select select = new Select(ChromeDriver.findElement(By.id("areaid_province")));
+		select.selectByValue("120000");//选择天津
+		
+		Select selectArea = new Select(ChromeDriver.findElement(By.id("areaid_city")));
+		selectArea.selectByValue("120107");//选择天津塘沽区
+		
+		ChromeDriver.findElement(By.id("modify_user_submit")).click();//保存
+		Thread.sleep(3000);//休眠3秒
+		
+		ChromeDriver.quit();//直接关闭chrome浏览器
+		//21
+	}
+
+}

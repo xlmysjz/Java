@@ -1,0 +1,21 @@
+2013-03-15 16:21:38 [main]-[INFO] Using Chrome
+2013-03-15 16:21:41 [main]-[INFO] Started BrowserEmulator
+2013-03-15 16:21:45 [main]-[INFO] Opened url http://www.google.com
+2013-03-15 16:21:46 [main]-[INFO] Found element //input[@name='q']
+2013-03-15 16:21:46 [main]-[INFO] Found desired element //input[@name='q']
+2013-03-15 16:21:46 [main]-[INFO] Type java at //input[@name='q']
+2013-03-15 16:21:47 [main]-[INFO] Found element //input[@name='btnK']
+2013-03-15 16:21:47 [main]-[INFO] Found desired element //input[@name='btnK']
+2013-03-15 16:21:48 [main]-[INFO] Clicked //input[@name='btnK']
+2013-03-15 16:21:48 [main]-[INFO] Found text www.java.com
+2013-03-15 16:21:48 [main]-[INFO] Found desired text www.java.com
+2013-03-15 16:21:50 [main]-[INFO] Opened url http://www.google.com
+2013-03-15 16:21:51 [main]-[INFO] Found element //input[@name='q']
+2013-03-15 16:21:51 [main]-[INFO] Found desired element //input[@name='q']
+2013-03-15 16:21:51 [main]-[INFO] Type github at //input[@name='q']
+2013-03-15 16:21:52 [main]-[INFO] Found element //input[@name='btnK']
+2013-03-15 16:21:52 [main]-[INFO] Found desired element //input[@name='btnK']
+2013-03-15 16:21:53 [main]-[INFO] Clicked //input[@name='btnK']
+2013-03-15 16:21:53 [main]-[INFO] Found text https://github.com/
+2013-03-15 16:21:53 [main]-[INFO] Found desired text https://github.com/
+2013-03-15 16:21:57 [main]-[INFO] Quitted BrowserEmulator

@@ -1,0 +1,808 @@
+[
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "313872513dfe15307083ae11a1e113a73658928a",
+    "jarFileModificationDate": "2012-11-02T10:56:56.681+08:00",
+    "location": "C:\\Java\\jdk1.6.0_37\\jre\\lib\\ext\\dnsns.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "testng-6.9beta",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "83c0ac1a53b645acbe23a250a98a8b51439217de",
+    "jarFileModificationDate": "2012-11-11T22:09:40+08:00",
+    "location": "C:\\Program Files\\eclipse\\testng-6.9beta\\testng-6.9beta.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "commons-logging",
+    "version": {
+      "major": 1,
+      "minor": 1,
+      "micro": 1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "5043bfebc3db072ed80fbd362e7caf00e885d8ae",
+    "jarFileModificationDate": "2013-02-27T15:54:04+08:00",
+    "location": "C:\\Program Files\\eclipse\\selenium-2.31.0\\libs\\commons-logging-1.1.1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "poi-ooxml-3.9-20121203",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "bbe83c739d22eecfacd06d7e0b99ba13277040ed",
+    "jarFileModificationDate": "2013-02-25T11:09:29+08:00",
+    "location": "D:\\Program Files\\kuaipan\\JavaWorkSpace\\B-Silencer\\plugin\\poi-ooxml-3.9-20121203.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "0c5c94d0d4c2812ad1c7bb893bb89e6830a350ca",
+    "jarFileModificationDate": "2012-11-02T10:57:24.638+08:00",
+    "location": "C:\\Java\\jdk1.6.0_37\\jre\\lib\\jsse.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "org.apache.httpcomponents.httpcore",
+    "version": {
+      "major": 4,
+      "minor": 2,
+      "micro": 1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "2d503272bf0a8b5f92d64db78b4ba9abbaccc6fd",
+    "jarFileModificationDate": "2013-02-27T15:54:04+08:00",
+    "location": "C:\\Program Files\\eclipse\\selenium-2.31.0\\libs\\httpcore-4.2.1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "commons-logging-1.1",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "ba24d5de831911b684c92cd289ed5ff826271824",
+    "jarFileModificationDate": "2013-02-25T11:09:29+08:00",
+    "location": "D:\\Program Files\\kuaipan\\JavaWorkSpace\\B-Silencer\\plugin\\commons-logging-1.1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "27d7fdff58c2f6906a2ee648c2a4eda7198b4e13",
+    "jarFileModificationDate": "2012-11-02T10:56:57.234+08:00",
+    "location": "C:\\Java\\jdk1.6.0_37\\jre\\lib\\resources.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jna-platform-3.4.0",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "4b58af397fd3156d700ad5016bcdd307a7a62ef5",
+    "jarFileModificationDate": "2013-02-27T15:54:04+08:00",
+    "location": "C:\\Program Files\\eclipse\\selenium-2.31.0\\libs\\jna-platform-3.4.0.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "sac-1.3",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "cdb2dcb4e22b83d6b32b93095f644c3462739e82",
+    "jarFileModificationDate": "2013-02-27T15:54:04+08:00",
+    "location": "C:\\Program Files\\eclipse\\selenium-2.31.0\\libs\\sac-1.3.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "net.sourceforge.htmlunit.htmlunit",
+    "version": {
+      "major": 2,
+      "minor": 11,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "40e8c4dabf8ef3371c4d42ed2fe95baa882adda4",
+    "jarFileModificationDate": "2013-02-27T15:54:04+08:00",
+    "location": "C:\\Program Files\\eclipse\\selenium-2.31.0\\libs\\htmlunit-2.11.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.json.json",
+    "version": {
+      "major": 20080701,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "d652f102185530c93b66158b1859f35d45687258",
+    "jarFileModificationDate": "2013-02-27T15:54:04+08:00",
+    "location": "C:\\Program Files\\eclipse\\selenium-2.31.0\\libs\\json-20080701.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jna-3.4.0",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "f4e1672a22b63e37a5d929603cb67e093e3729d5",
+    "jarFileModificationDate": "2013-02-27T15:54:04+08:00",
+    "location": "C:\\Program Files\\eclipse\\selenium-2.31.0\\libs\\jna-3.4.0.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "htmlunit-core-js-2.11",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "d11718ebc89876ebe2743a1f200d21f599bc5e0f",
+    "jarFileModificationDate": "2013-02-27T15:54:04+08:00",
+    "location": "C:\\Program Files\\eclipse\\selenium-2.31.0\\libs\\htmlunit-core-js-2.11.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "selenium-java-2.31.0",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "b8fa8088622c30a95c8e5fb1022f69af675e83e7",
+    "jarFileModificationDate": "2013-02-27T15:54:04+08:00",
+    "location": "D:\\Program Files\\kuaipan\\JavaWorkSpace\\B-Silencer\\plugin\\selenium-java-2.31.0.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.yaml.snakeyaml",
+    "version": {
+      "major": 1,
+      "minor": 8,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "a6562c9f5deb3cc74bce28f70d6a4d6545d3cae4",
+    "jarFileModificationDate": "2013-03-05T11:17:39+08:00",
+    "location": "D:\\Program Files\\kuaipan\\JavaWorkSpace\\B-Silencer\\plugin\\selenium-server-standalone-2.31.0.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "serializer-2.7.1",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "4b4b18df434451249bb65a63f2fb69e215a6a020",
+    "jarFileModificationDate": "2013-02-27T15:54:04+08:00",
+    "location": "C:\\Program Files\\eclipse\\selenium-2.31.0\\libs\\serializer-2.7.1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "xml-apis-1.4.01",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "3789d9fada2d3d458c4ba2de349d48780f381ee3",
+    "jarFileModificationDate": "2013-02-27T15:54:04+08:00",
+    "location": "C:\\Program Files\\eclipse\\selenium-2.31.0\\libs\\xml-apis-1.4.01.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.apache.commons.exec",
+    "version": {
+      "major": 1,
+      "minor": 1,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "07dfdf16fade726000564386825ed6d911a44ba1",
+    "jarFileModificationDate": "2013-02-27T15:54:04+08:00",
+    "location": "C:\\Program Files\\eclipse\\selenium-2.31.0\\libs\\commons-exec-1.1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "xalan-2.7.1",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "75f1d83ce27bab5f29fff034fc74aa9f7266f22a",
+    "jarFileModificationDate": "2013-02-27T15:54:04+08:00",
+    "location": "C:\\Program Files\\eclipse\\selenium-2.31.0\\libs\\xalan-2.7.1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "xercesImpl-2.10.0",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "9161654d2afe7f9063455f02ccca8e4ec2787222",
+    "jarFileModificationDate": "2013-02-27T15:54:04+08:00",
+    "location": "C:\\Program Files\\eclipse\\selenium-2.31.0\\libs\\xercesImpl-2.10.0.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "testng-2.0beta-jdk15",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "b07497c84cb1abb7c797d12aea9f4dbf72785943",
+    "jarFileModificationDate": "2004-12-04T15:10:10+08:00",
+    "location": "C:\\Program Files\\eclipse\\testng-6.9beta\\testng-2.0beta-jdk15.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "eb6546d0448f5f8592970356ee99d20d1ab06b55",
+    "jarFileModificationDate": "2012-11-02T10:57:13.121+08:00",
+    "location": "C:\\Java\\jdk1.6.0_37\\jre\\lib\\charsets.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "phantomjsdriver-1.0.1",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "36aa3d4deba229185df1966b74bad5a1d19f5dc5",
+    "jarFileModificationDate": "2013-02-27T15:54:04+08:00",
+    "location": "C:\\Program Files\\eclipse\\selenium-2.31.0\\libs\\phantomjsdriver-1.0.1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "f61f71496ffdd90c7b1af3c651a2223e906508a5",
+    "jarFileModificationDate": "2012-11-02T10:56:56.708+08:00",
+    "location": "C:\\Java\\jdk1.6.0_37\\jre\\lib\\ext\\sunpkcs11.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "stax-api-1.0.1",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "49c100caf72d658aca8e58bd74a4ba90fa2b0d70",
+    "jarFileModificationDate": "2013-02-25T11:09:29+08:00",
+    "location": "D:\\Program Files\\kuaipan\\JavaWorkSpace\\B-Silencer\\plugin\\stax-api-1.0.1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "com.google.guava",
+    "version": {
+      "major": 14,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "67b7be4ee7ba48e4828a42d6d5069761186d4a53",
+    "jarFileModificationDate": "2013-02-27T15:54:04+08:00",
+    "location": "C:\\Program Files\\eclipse\\selenium-2.31.0\\libs\\guava-14.0.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.jboss.netty",
+    "version": {
+      "major": 3,
+      "minor": 5,
+      "micro": 7,
+      "qualifier": "Final"
+    },
+    "jarFileFingerprint": "811465e6dfc89d7c78d21de6a9747b6046cb5403",
+    "jarFileModificationDate": "2013-02-27T15:54:04+08:00",
+    "location": "C:\\Program Files\\eclipse\\selenium-2.31.0\\libs\\netty-3.5.7.Final.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "0f2a59c0d3fcb0b9f191149379b14e2a79d395aa",
+    "jarFileModificationDate": "2012-11-02T10:57:32.936+08:00",
+    "location": "C:\\Java\\jdk1.6.0_37\\jre\\lib\\rt.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "org.testng",
+    "version": {
+      "major": 6,
+      "minor": 8,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "ad4531b28715d39f73c49a56caf0c456cb34d48c",
+    "jarFileModificationDate": "2013-02-27T15:54:04+08:00",
+    "location": "C:\\Program Files\\eclipse\\selenium-2.31.0\\libs\\testng-6.8.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "com.google.protobuf.protobuf-java",
+    "version": {
+      "major": 2,
+      "minor": 4,
+      "micro": 1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "7b36b2a47a888ec68065277fd28155909358e556",
+    "jarFileModificationDate": "2013-02-27T15:54:04+08:00",
+    "location": "C:\\Program Files\\eclipse\\selenium-2.31.0\\libs\\protobuf-java-2.4.1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "net.sourceforge.cssparser.cssparser",
+    "version": {
+      "major": 0,
+      "minor": 9,
+      "micro": 8,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "f05d7c249dfe8b884e72d614531630a9992bb037",
+    "jarFileModificationDate": "2013-02-27T15:54:04+08:00",
+    "location": "C:\\Program Files\\eclipse\\selenium-2.31.0\\libs\\cssparser-0.9.8.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "selenium-java-2.31.0",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "b8fa8088622c30a95c8e5fb1022f69af675e83e7",
+    "jarFileModificationDate": "2013-02-27T15:54:04+08:00",
+    "location": "C:\\Program Files\\eclipse\\selenium-2.31.0\\selenium-java-2.31.0.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "poi-scratchpad-3.9-20121203",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "0f07d54f88a9f6c743d133be8d4446879a1e6729",
+    "jarFileModificationDate": "2013-02-25T11:09:29+08:00",
+    "location": "D:\\Program Files\\kuaipan\\JavaWorkSpace\\B-Silencer\\plugin\\poi-scratchpad-3.9-20121203.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "d6a245c5513e197e6f1a0d0b996c1507212def85",
+    "jarFileModificationDate": "2012-11-02T10:57:33.182+08:00",
+    "location": "C:\\Java\\jdk1.6.0_37\\jre\\lib\\ext\\localedata.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "org.apache.commons.jxpath",
+    "version": {
+      "major": 1,
+      "minor": 3,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "c22d7d0f0f40eb7059a23cfa61773a416768b137",
+    "jarFileModificationDate": "2013-02-27T15:54:04+08:00",
+    "location": "C:\\Program Files\\eclipse\\selenium-2.31.0\\libs\\commons-jxpath-1.3.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.apache.commons.codec",
+    "version": {
+      "major": 1,
+      "minor": 6,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "b7f0fc8f61ecadeb3695f0b9464755eee44374d4",
+    "jarFileModificationDate": "2013-02-27T15:54:04+08:00",
+    "location": "C:\\Program Files\\eclipse\\selenium-2.31.0\\libs\\commons-codec-1.6.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.apache.james.apache-mime4j",
+    "version": {
+      "major": 0,
+      "minor": 6,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "945007627e8d12275d755081a9e609c018e1210d",
+    "jarFileModificationDate": "2013-02-27T15:54:04+08:00",
+    "location": "C:\\Program Files\\eclipse\\selenium-2.31.0\\libs\\apache-mime4j-0.6.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.apache.httpcomponents.httpclient",
+    "version": {
+      "major": 4,
+      "minor": 2,
+      "micro": 1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "64849efdc10ea21eed3be7cc19ea7ec5af186776",
+    "jarFileModificationDate": "2013-02-27T15:54:04+08:00",
+    "location": "C:\\Program Files\\eclipse\\selenium-2.31.0\\libs\\httpclient-4.2.1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "operadriver-1.2",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "3337ad7712d1d968886f901d553aaa0c3e915715",
+    "jarFileModificationDate": "2013-02-27T15:54:04+08:00",
+    "location": "C:\\Program Files\\eclipse\\selenium-2.31.0\\libs\\operadriver-1.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.apache.commons.lang3",
+    "version": {
+      "major": 3,
+      "minor": 1,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "905075e6c80f206bbe6cf1e809d2caa69f420c76",
+    "jarFileModificationDate": "2013-02-27T15:54:04+08:00",
+    "location": "C:\\Program Files\\eclipse\\selenium-2.31.0\\libs\\commons-lang3-3.1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "dom4j-1.6.1",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "5d3ccc056b6f056dbf0dddfdf43894b9065a8f94",
+    "jarFileModificationDate": "2013-02-25T11:09:29+08:00",
+    "location": "D:\\Program Files\\kuaipan\\JavaWorkSpace\\B-Silencer\\plugin\\dom4j-1.6.1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "com.beust.jcommander",
+    "version": {
+      "major": 1,
+      "minor": 29,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "b2072b3ef59c398c0569a8735820af5345df7af0",
+    "jarFileModificationDate": "2013-02-27T15:54:04+08:00",
+    "location": "C:\\Program Files\\eclipse\\selenium-2.31.0\\libs\\jcommander-1.29.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "poi-3.9-20121203",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "5d5e41354e88322e4bc590b31f3d2d1d52b3e6ac",
+    "jarFileModificationDate": "2013-02-25T11:09:23+08:00",
+    "location": "D:\\Program Files\\kuaipan\\JavaWorkSpace\\B-Silencer\\plugin\\poi-3.9-20121203.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "log4j",
+    "version": {
+      "major": 1,
+      "minor": 2,
+      "micro": 17,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "4f90475694c41965c9a0c8bac53ea5c690dea446",
+    "jarFileModificationDate": "2013-02-25T11:09:29+08:00",
+    "location": "D:\\Program Files\\kuaipan\\JavaWorkSpace\\B-Silencer\\plugin\\log4j-1.2.17.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "bsh-1.3.0",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "1fed35193d56470f46c0fb33917e3e82c0c42358",
+    "jarFileModificationDate": "2013-02-27T15:54:04+08:00",
+    "location": "C:\\Program Files\\eclipse\\selenium-2.31.0\\libs\\bsh-1.3.0.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "poi-ooxml-schemas-3.9-20121203",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "4c514498f0e82cccfdd3208b9caff2f45158db4a",
+    "jarFileModificationDate": "2013-02-25T11:09:29+08:00",
+    "location": "D:\\Program Files\\kuaipan\\JavaWorkSpace\\B-Silencer\\plugin\\poi-ooxml-schemas-3.9-20121203.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "70e3f9e76e3d5884415516c0cee0855295bcb571",
+    "jarFileModificationDate": "2012-11-02T10:56:56.884+08:00",
+    "location": "C:\\Java\\jdk1.6.0_37\\jre\\lib\\jce.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "poi-excelant-3.9-20121203",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "b3a741242569219eaf7bee9cf8b52042a226f6c0",
+    "jarFileModificationDate": "2013-02-25T11:09:23+08:00",
+    "location": "D:\\Program Files\\kuaipan\\JavaWorkSpace\\B-Silencer\\plugin\\poi-excelant-3.9-20121203.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.apache.commons.io",
+    "version": {
+      "major": 2,
+      "minor": 2,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "83b5b8a7ba1c08f9e8c8ff2373724e33d3c1e22a",
+    "jarFileModificationDate": "2013-02-27T15:54:04+08:00",
+    "location": "C:\\Program Files\\eclipse\\selenium-2.31.0\\libs\\commons-io-2.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "0046b4afa97bf972a1148ecd4ea3426df5a585f6",
+    "jarFileModificationDate": "2012-11-02T10:56:56.706+08:00",
+    "location": "C:\\Java\\jdk1.6.0_37\\jre\\lib\\ext\\sunmscapi.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "hamcrest-core-1.3",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "42a25dc3219429f0e5d060061f71acb49bf010a0",
+    "jarFileModificationDate": "2013-02-27T15:54:04+08:00",
+    "location": "C:\\Program Files\\eclipse\\selenium-2.31.0\\libs\\hamcrest-core-1.3.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jyaml-1.3",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "f25e3f69a18fa652ca2a04f5263766367066873b",
+    "jarFileModificationDate": "2013-02-25T11:09:29+08:00",
+    "location": "D:\\Program Files\\kuaipan\\JavaWorkSpace\\B-Silencer\\plugin\\jyaml-1.3.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "nekohtml-1.9.17",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "39a870b0ea4cb0d2a3015c1ab569d17d83122d55",
+    "jarFileModificationDate": "2013-02-27T15:54:04+08:00",
+    "location": "C:\\Program Files\\eclipse\\selenium-2.31.0\\libs\\nekohtml-1.9.17.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "junit-dep-4.11",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "ad16b17a5c087c86f0d9b527fffc9969692ed8a9",
+    "jarFileModificationDate": "2013-02-27T15:54:04+08:00",
+    "location": "C:\\Program Files\\eclipse\\selenium-2.31.0\\libs\\junit-dep-4.11.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.ini4j.ini4j",
+    "version": {
+      "major": 0,
+      "minor": 5,
+      "micro": 2,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "16561cb11c221b5928119e10d7636c95ee5c960d",
+    "jarFileModificationDate": "2013-02-27T15:54:04+08:00",
+    "location": "C:\\Program Files\\eclipse\\selenium-2.31.0\\libs\\ini4j-0.5.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "2357317d1e1f14937b3bda942c58791ee1dba581",
+    "jarFileModificationDate": "2012-11-02T10:56:56.705+08:00",
+    "location": "C:\\Java\\jdk1.6.0_37\\jre\\lib\\ext\\sunjce_provider.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "hamcrest-library-1.3",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "4785a3c21320980282f9f33d0d1264a69040538f",
+    "jarFileModificationDate": "2013-02-27T15:54:04+08:00",
+    "location": "C:\\Program Files\\eclipse\\selenium-2.31.0\\libs\\hamcrest-library-1.3.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.eclipse.jetty.websocket",
+    "version": {
+      "major": 8,
+      "minor": 1,
+      "micro": 8,
+      "qualifier": "v20121106"
+    },
+    "jarFileFingerprint": "8b722799be12c967cddca055fb8a710b139c5d42",
+    "jarFileModificationDate": "2013-02-27T15:54:04+08:00",
+    "location": "C:\\Program Files\\eclipse\\selenium-2.31.0\\libs\\jetty-websocket-8.1.8.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.apache.httpcomponents.httpmime",
+    "version": {
+      "major": 4,
+      "minor": 2,
+      "micro": 1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "c7349b04e5d76895fdfc0f38bdc0699e5f6fef5a",
+    "jarFileModificationDate": "2013-02-27T15:54:04+08:00",
+    "location": "C:\\Program Files\\eclipse\\selenium-2.31.0\\libs\\httpmime-4.2.1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "cglib-nodep-2.1_3",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "58d3be5953547c0019e5704d6ed4ffda3b0c7c66",
+    "jarFileModificationDate": "2013-02-27T15:54:04+08:00",
+    "location": "C:\\Program Files\\eclipse\\selenium-2.31.0\\libs\\cglib-nodep-2.1_3.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.apache.commons.collections",
+    "version": {
+      "major": 3,
+      "minor": 2,
+      "micro": 1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "761ea405b9b37ced573d2df0d1e3a4e0f9edc668",
+    "jarFileModificationDate": "2013-02-27T15:54:04+08:00",
+    "location": "C:\\Program Files\\eclipse\\selenium-2.31.0\\libs\\commons-collections-3.2.1.jar",
+    "javaRuntime": false
+  }
+]

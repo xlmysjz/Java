@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+
+<parameter name="TheString" value="xul"/>
+
+  <test name="Test">
+  <groups>
+  		<run>
+  			<include name="t1"/><!--只执行 组里是 t1的脚本  -->
+  		</run>
+  	</groups>
+    <classes>
+      <class name="mytestNGtest.TestNGTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
