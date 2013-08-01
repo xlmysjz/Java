@@ -91,6 +91,11 @@ public class TopkaCreateActivity4
 					 "document.getElementById('closeTimeMinutes').removeAttribute('readonly');"+
 					 "document.getElementById('closeTimeMinutes').setAttribute('value','50分');";
 					 //以上是活动报名截止设置，时间为2013-12-19 22时 50分
+		
+		/*//这里是在JS里如何运用变量，注意datetime，这是个变量
+		 String js="document.getElementById('process1Form:start');" +
+					"document.getElementById('process1Form:start').setAttribute('value',"+datetime+");";
+		 */
 		Exec.executeScript(js);//执行JS，将以上设置的内容全部填入时间控件输入框
 		
 		driver.findElement(By.xpath("//div[@class='place_menub']/a")).click();//定位并点击 发布地区
