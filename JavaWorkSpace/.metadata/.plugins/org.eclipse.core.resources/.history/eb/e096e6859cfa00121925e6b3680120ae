@@ -1,0 +1,201 @@
+package WebDriver;
+
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
+
+public class TopkaCreateActivity4
+{
+	private static String LoginUrl = "http://topka.cn";//登录链接
+	public static WebDriver driver;
+	
+	public static String getDate()//获取当前时间
+	{
+		Date date = new Date();//创建日期对象
+		DateFormat dateformat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+		String NowDate = dateformat.format(date);
+		return NowDate;
+	}
+	public static void InitBrowser() throws Exception//创建浏览器实例
+	{
+		System.setProperty("webdriver.firefox.bin", "D:\\Program Files\\Mozilla Firefox\\firefox.exe");// 设置firefox的路径
+		driver = new FirefoxDriver();//创建firefox浏览器实例
+		driver.get(LoginUrl);//打开topka登录页面
+		
+		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);//设置超时阀值
+		//Thread.sleep(3000);//打开http://www.topka.cn页面后，停留3000毫秒
+	}
+
+	public static void main(String[] args) throws Exception
+	{
+		InitBrowser();//初始化浏览器
+		
+		
+		//以下是在登录页面的操作
+		WebElement ElementLogin = driver.findElement(By.linkText("登录"));//查找右上角 登录 链接
+		ElementLogin.click();
+		
+		Thread.sleep(3000);//进入登陆页面后，停留3000毫秒
+		
+		WebElement ElEmail = driver.findElement(By.id("login_email"));//邮箱输入框查找
+		ElEmail.clear();//先清一下邮箱输入框里的内容
+		ElEmail.sendKeys("111111@sina.com");//向邮箱输入框输入 111111@sina.com
+		
+		WebElement ElPWD = driver.findElement(By.cssSelector("input[id=\"login_password\"]"));//查找密码输入框
+		ElPWD.clear();
+		ElPWD.sendKeys("123456");
+		
+		WebElement ElSub = driver.findElement(By.xpath("//input[@id='login']"));//查找登录按钮
+		ElSub.click();//登录
+
+		//下面是点击活动标签，创建活动的脚本
+		driver.findElement(By.linkText("活动")).click();//登录后点击 首页-活动 标签
+		Thread.sleep(3000);//停留3000毫秒
+		
+		driver.findElement(By.id("issue_act_btn")).click();//使用id定位 发起活动 那个按钮并点击
+		Thread.sleep(3000);//停留3000毫秒
+		driver.findElement(By.xpath("//div[@id='work_post_content']/ul/li[2]/a")).click();//在活动类型页面定位 聚会 那个类型的活动，并点击
+		Thread.sleep(8000);//停留8000毫秒
+		//以下是在创建活动时各元素的输入
+		driver.findElement(By.xpath("//input[@id='activityName']")).sendKeys("这是自动化脚本创建的活动"+getDate());//定位活动名称,并输入名称
+		
+		JavascriptExecutor Exec = (JavascriptExecutor) driver;//使用JS设置活动开始时间控件
+		String js = "document.getElementById('startDate').removeAttribute('readonly');"+
+					"document.getElementById('startDate').setAttribute('value','2013-01-20');"+//这两行这是年月日的设置
+					"document.getElementById('startTimeHours').removeAttribute('readonly');"+
+					"document.getElementById('startTimeHours').setAttribute('value','22时');"+//这两行这是小时的设置
+					"document.getElementById('startTimeMinutes').removeAttribute('readonly');"+
+					"document.getElementById('startTimeMinutes').setAttribute('value','55分');"+//这两行是分钟的设置
+					//以上是活动的开始时间设置，时间为2013-01-20 22时  55分
+					
+					 "document.getElementById('endDate').removeAttribute('readonly');"+
+					 "document.getElementById('endDate').setAttribute('value','2013-12-20');"+
+					 "document.getElementById('endTimeHours').removeAttribute('readonly');"+
+					 "document.getElementById('endTimeHours').setAttribute('value','06时');"+
+					 "document.getElementById('endTimeMinutes').removeAttribute('readonly');"+
+					 "document.getElementById('endTimeMinutes').setAttribute('value','10分');"+
+					 //以上是活动结束时间设置，时间为2013-12-20 06时 10分
+					 
+					 "document.getElementById('closeDate').removeAttribute('readonly');"+
+					 "document.getElementById('closeDate').setAttribute('value','2013-12-19');"+
+					 "document.getElementById('closeTimeHours').removeAttribute('readonly');"+
+					 "document.getElementById('closeTimeHours').setAttribute('value','22时');"+
+					 "document.getElementById('closeTimeMinutes').removeAttribute('readonly');"+
+					 "document.getElementById('closeTimeMinutes').setAttribute('value','50分');";
+					 //以上是活动报名截止设置，时间为2013-12-19 22时 50分
+		/*//注意datetime这是个变量
+		 String js="document.getElementById('process1Form:start');" +
+					"document.getElementById('process1Form:start').setAttribute('value',"+datetime+");";
+		 */
+		Exec.executeScript(js);//执行JS，将以上设置的内容全部填入时间控件输入框
+		
+		driver.findElement(By.xpath("//div[@class='place_menub']/a")).click();//定位并点击 发布地区
+		Thread.sleep(2000);//停留2000毫秒
+		driver.findElement(By.xpath("//div[@class='place_menu_box']/dl[1]/dd[3]/a")).click();//定位并选择河北地区
+		Thread.sleep(2000);//停留2000毫秒
+		
+		//输入 活动地点
+		JavascriptExecutor Execinput = (JavascriptExecutor) driver;
+		String JsInput = "document.getElementById('otherPosInput').removeAttribute('autocomplete');"+
+					"document.getElementById('otherPosInput').setAttribute('value','中国河北省石家庄桥东区北二环东路石家庄铁道大学');";//使用JS对活动地点赋值
+		Execinput.executeScript(JsInput);//JS执行
+		
+		/*//使用下面的方法也可以实现对活动地点输入框输入内容的操作，但是赋值时有个自动查询，导致如果输入的内容不能立即响应
+		 执行后面的 地图标注 按钮点击时无反应的情况，所以使用JS赋值
+		WebElement ElPlace = driver.findElement(By.xpath("//input[@id='otherPosInput']"));//定位活动地点输入框
+		ElPlace.clear();//清一下输入框里的内容
+		ElPlace.sendKeys("石家庄");//活动地点输入 一个模糊地址
+		*/
+		//Thread.sleep(1000);//停留1000毫秒
+		/*
+		WebElement subm = driver.findElement(By.xpath("//body/div[4]/div[1]/div/div[1]/ul/li[5]/div/a"));//定位 地图标注 按钮
+		subm.click();//点击  地图标注 按钮
+		Thread.sleep(3000);//停留3000毫秒
+		*/
+		/*
+		//搜索地点窗口
+		JavascriptExecutor ExecSearch = (JavascriptExecutor) driver;//使用JS设置活动开始时间控件
+		String JsSearch = "document.getElementById('place_key_word').removeAttribute('autocomplete');"+
+					"document.getElementById('place_key_word').setAttribute('value','中国河北省石家庄桥东区北二环东路石家庄铁道大学');";
+		ExecSearch.executeScript(JsSearch);//JS执行
+		*/
+		/*
+		//使用下面的方法也可以实现对活动地点输入框输入内容的操作，但是赋值时有个自动查询，导致如果输入的内容不能立即响应
+		// 执行后面的 搜索地图 按钮点击时无反应的情况，所以使用JS赋值
+		WebElement InputSearch = driver.findElement(By.xpath("//input[@id='place_key_word']"));//定位搜索地图输入框输
+		InputSearch.clear();
+		InputSearch.sendKeys("中国河北省石家庄桥东区北二环东路石家庄铁道大学");//在搜索地图输入框输入详细地址
+		
+		Thread.sleep(2000);//停留2000毫秒
+		driver.findElement(By.id("searchMapBtn")).click();//点击搜索地图按钮
+		Thread.sleep(2000);//停留2000毫秒
+		driver.findElement(By.id("setMapSave")).click();//搜索地点后点击 保存 来进行标注
+		Thread.sleep(3000);//停留3000毫秒
+		*/
+		
+		WebElement SelectRadio = driver.findElement(By.xpath("//input[@id='cost1']"));//定位活动费用 元/人 的那个单选框
+		SelectRadio.click();//选中  元/人 的那个单选框
+		driver.findElement(By.xpath("//input[@id='cost']")).sendKeys("365.36");//输入 金额 365.36
+		//活动说明输入框 选择表情以及输入内容
+		driver.findElement(By.xpath("//body/div[4]/div[1]/div/div[1]/ul/li[8]/div/div/div[1]/span[1]/span")).click();//定位并点击活动说明框上的表情
+		Thread.sleep(2000);//停留2000毫秒
+		driver.findElement(By.xpath("//body/div[10]/div/div[1]/div/img[2]")).click();//选择一个表情框里第二个 嘻嘻 的那个表情
+		Thread.sleep(1000);//停留1000毫秒
+		
+		//*下面这句：遇到有iframe的输入框不能直接使用driver.findElement(）来定位元素，需要使用driver.switchTo().frame 先切换到大的frame  然后再定位到文本输入框
+		WebElement InputBox = driver.switchTo().frame(driver.findElement(By.id("ke_edit_iframe"))).findElement(By.id("eiframe_body"));//向活动说明输入框输入内容
+		InputBox.sendKeys("这是活动说明，你可以上传与本次活动有关的图片，输入参加本次活动的注意事项等。");//向输入框输入内容  eiframe_body
+		Thread.sleep(1000);
+		driver.switchTo().defaultContent();//跳出frame,以便继续定位页面其他元素
+		
+		//活动人数
+		driver.findElement(By.xpath("//body/div[4]/div[1]/div/div[2]/div[2]/div[1]/div/a[3]")).click();//点击活动人数的 限定为 按钮
+		Thread.sleep(1000);//停留1000毫秒
+		driver.findElement(By.id("min_cnt")).sendKeys("5");//最低人数修改为 5
+		driver.findElement(By.id("max_cnt")).clear();//先清以下最高人数里的 数值
+		driver.findElement(By.id("max_cnt")).sendKeys("100");//最高人数修改为100
+		driver.findElement(By.id("eve_cnt")).sendKeys("3");//每人限报改为3人
+		//勾选报名表
+		driver.findElement(By.xpath("//body/div[4]/div[1]/div/div[2]/div[3]/div[1]/div/a[3]")).click();//定位并点击报名表的 自定义 按钮
+		Thread.sleep(2000);//停留2000毫秒
+		driver.findElement(By.xpath("//input[@id='form_item_phone']")).click();//定位并勾选 手机号
+		driver.findElement(By.id("form_item_pn")).click();//定位并勾选 车牌号
+		Thread.sleep(1000);//停留1000毫秒
+		//提交活动
+		driver.findElement(By.id("submit")).click();
+		Thread.sleep(6000);//活动创建成功后停留6000毫秒
+		driver.findElement(By.xpath("//body/div[9]/div[1]/a")).click();//关闭邀请好友一起参加窗口
+		Thread.sleep(3000);//活动创建成功后停留3000毫秒
+		
+		//以下是退出登陆平台操作
+		Actions action = new Actions(driver);//创建一个鼠标事件
+		action.moveToElement(driver.findElement(By.xpath("//div[@class='fr ml_15 pos_pare mod_userbox J_user_menu']"))).perform();
+		/*
+		 上面这段代码是鼠标移动到右上角，能够弹出下拉菜单的区域，这里用的是By.xpath()方法
+		 这里费了很大的工时，一开始使用 By.className，By.cssSelector()方法，也是要达到鼠标移动到右上角后自动显示下拉菜单的效果，但都未能如愿。
+		 最后请教高人后，使用By.xpath()方法，成功。
+		 */
+		Thread.sleep(2000);//活动创建成功后停留2000毫秒
+		WebElement ElementQuit =driver.findElement(By.linkText("退出帐号"));//找到下拉菜单里退出的那个链接
+		ElementQuit.click();//点击后退出平台
+		//注意这里点击的是右上角退出账户的那个链接，并不是直接关闭浏览器，如果要直接关闭浏览器，直接调用driver.quit()就可以了
+		
+		
+		/*注：
+		1.上传图片，如：头像，那个按钮是flash，目前selenium里本身还无法定位，只能依靠第三方工具如：autoit可以实现图片上传，
+		谁有兴趣可以研究一下autoit。
+		2.建立聚会活动那个“地图标注”按钮本脚本中没有涉及，谁有兴趣可以写一下输入地址后点击“地图标注”再进行地址定位的操作。
+		3.凡是有页面跳转、按钮点击事件的 都要加上 Thread.sleep()防止页面卡住。
+		4.当使用By.id By.name无法定位时，使用By.xpath来定位尤为方便。
+		 */
+	}
+
+}
